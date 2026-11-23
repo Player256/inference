@@ -1,0 +1,2505 @@
+{
+  "schema_version": "1.0",
+  "aiperf_version": "0.11.0",
+  "benchmark_id": "7bc8da45bb35",
+  "summary": {
+    "endpoints_configured": [
+      "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics"
+    ],
+    "endpoints_successful": [
+      "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics"
+    ],
+    "start_time": "2026-11-23T23:35:12.243823",
+    "end_time": "2026-11-23T23:40:57.230265",
+    "endpoint_info": {
+      "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics": {
+        "total_fetches": 1034,
+        "first_fetch_ns": 1795457059912458142,
+        "last_fetch_ns": 1795457456921008256,
+        "avg_fetch_latency_ms": 845.6519472301741,
+        "unique_updates": 999,
+        "first_update_ns": 1795457059912458142,
+        "last_update_ns": 1795457456921008256,
+        "duration_seconds": 397.008550114,
+        "avg_update_interval_ms": 397.8041584308617,
+        "median_update_interval_ms": 330.2038415
+      }
+    }
+  },
+  "metrics": {
+    "http_request_duration_highr_seconds": {
+      "type": "histogram",
+      "description": "High-resolution duration of HTTP requests in seconds..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "stats": {
+            "count": 158,
+            "sum": 41.907901439999996,
+            "avg": 0.26523988253164554,
+            "count_rate": 0.39797631550915136,
+            "sum_rate": 0.10555919117602441,
+            "p1_estimate": 0.0038868727480378343,
+            "p5_estimate": 0.07208360182329056,
+            "p10_estimate": 0.2134757387126748,
+            "p25_estimate": 0.2222756153394725,
+            "p50_estimate": 0.25,
+            "p75_estimate": 0.317732974484051,
+            "p90_estimate": 0.41601428691391634,
+            "p95_estimate": 0.44877472439053806,
+            "p99_estimate": 0.5
+          },
+          "buckets": {
+            "0.01": 5,
+            "0.025": 7,
+            "0.05": 8,
+            "0.075": 8,
+            "0.1": 9,
+            "0.25": 55,
+            "0.5": 154,
+            "0.75": 158,
+            "1.0": 158,
+            "1.5": 158,
+            "2.0": 158,
+            "2.5": 158,
+            "3.0": 158,
+            "3.5": 158,
+            "4.0": 158,
+            "4.5": 158,
+            "5.0": 158,
+            "7.5": 158,
+            "10.0": 158,
+            "30.0": 158,
+            "60.0": 158,
+            "+Inf": 158
+          }
+        }
+      ]
+    },
+    "http_request_duration_seconds": {
+      "type": "histogram",
+      "description": "Duration of HTTP requests in seconds grouped by method and handler..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "handler": "/v1/chat/completions",
+            "method": "POST"
+          },
+          "stats": {
+            "count": 154,
+            "sum": 41.13342059399999,
+            "avg": 0.2671001337272727,
+            "count_rate": 0.44953469049254446,
+            "sum_rate": 0.12007077594560676,
+            "p1_estimate": 0.004506284432775209,
+            "p5_estimate": 0.07590580585236481,
+            "p10_estimate": 0.11631498496720984,
+            "p25_estimate": 0.17274865557971725,
+            "p50_estimate": 0.26680477326722957,
+            "p75_estimate": 0.36706835147385664,
+            "p90_estimate": 0.427431986746052,
+            "p95_estimate": 0.4475531985034503,
+            "p99_estimate": 0.5031325860421756
+          },
+          "buckets": {
+            "0.1": 8,
+            "0.5": 150,
+            "1.0": 154,
+            "+Inf": 154
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "handler": "/v1/models",
+            "method": "GET"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.1": 0,
+            "0.5": 0,
+            "1.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "http_requests_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "handler": "/v1/chat/completions",
+            "method": "POST",
+            "status": "2xx"
+          },
+          "stats": {
+            "avg": 96.73883495145631,
+            "min": 4.0,
+            "max": 158.0,
+            "std": 40.07314433134149,
+            "p1": 10.0,
+            "p5": 19.0,
+            "p10": 40.0,
+            "p25": 70.0,
+            "p50": 101.0,
+            "p75": 130.0,
+            "p90": 148.0,
+            "p95": 153.0,
+            "p99": 158.0
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "handler": "/v1/models",
+            "method": "GET",
+            "status": "2xx"
+          },
+          "stats": {
+            "avg": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0,
+            "p1": 1.0,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 1.0
+          }
+        }
+      ]
+    },
+    "vllm:cache_config_info": {
+      "type": "gauge",
+      "description": "Information of the LLMEngine CacheConfig.",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "_block_size_resolved": "True",
+            "_extensible_kv_cache_resolved": "True",
+            "block_size": "576",
+            "cache_dtype": "auto",
+            "cache_hit_alignment_tokens": "576",
+            "effective_attention_block_size": "576",
+            "enable_extensible_kv_cache": "True",
+            "enable_mamba_shared_prefix_checkpoint": "False",
+            "enable_prefix_caching": "True",
+            "engine": "0",
+            "gpu_memory_utilization": "None",
+            "hash_block_size": "576",
+            "is_attention_free": "False",
+            "kv_cache_dtype_skip_layers": "[]",
+            "kv_cache_layout": "LBNHC",
+            "kv_cache_max_concurrency": "2.334133173365327",
+            "kv_cache_memory_bytes": "None",
+            "kv_cache_size_tokens": "186730",
+            "kv_offloading_backend": "native",
+            "kv_offloading_size": "None",
+            "kv_sharing_fast_prefill": "False",
+            "mamba_block_size": "576",
+            "mamba_cache_dtype": "auto",
+            "mamba_cache_mode": "align",
+            "mamba_page_size_padded": "2359296",
+            "mamba_ssm_cache_dtype": "float32",
+            "num_cpu_blocks": "None",
+            "num_gpu_blocks": "3891",
+            "num_gpu_blocks_override": "None",
+            "prefix_cache_retention_interval": "0",
+            "prefix_caching_hash_algo": "sha256",
+            "prefix_match_unit": "None",
+            "replayssm_buffer_len": "16",
+            "simple_cpu_offload_num_blocks": "None",
+            "skip_page_size_padded": "None",
+            "sliding_window": "None",
+            "swa_bounded_replay": "True",
+            "use_kda_recoverssm": "False",
+            "use_replayssm": "False",
+            "user_specified_block_size": "False"
+          },
+          "stats": {
+            "avg": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0,
+            "p1": 1.0,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 1.0
+          }
+        }
+      ]
+    },
+    "vllm:corrupted_requests_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:e2e_request_latency_seconds": {
+      "type": "histogram",
+      "description": "Histogram of e2e request latency in seconds..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 2816.4877252578735,
+            "avg": 18.77658483505249,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 7.094274731486579,
+            "p1_estimate": 4.106377373150086,
+            "p5_estimate": 5.5491982719830615,
+            "p10_estimate": 7.193255644615296,
+            "p25_estimate": 10.86341121340385,
+            "p50_estimate": 15.540662031797433,
+            "p75_estimate": 21.25892185385968,
+            "p90_estimate": 31.09346123123858,
+            "p95_estimate": 49.28817612111327,
+            "p99_estimate": 68.39114962358053
+          },
+          "buckets": {
+            "0.3": 0,
+            "0.5": 0,
+            "0.8": 0,
+            "1.0": 0,
+            "1.5": 0,
+            "2.0": 0,
+            "2.5": 0,
+            "5.0": 5,
+            "10.0": 30,
+            "15.0": 70,
+            "20.0": 105,
+            "30.0": 133,
+            "40.0": 140,
+            "50.0": 142,
+            "60.0": 147,
+            "120.0": 150,
+            "240.0": 150,
+            "480.0": 150,
+            "960.0": 150,
+            "1920.0": 150,
+            "7680.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:engine_sleep_state": {
+      "type": "gauge",
+      "description": "Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "sleep_state": "awake"
+          },
+          "stats": {
+            "avg": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0,
+            "p1": 1.0,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 1.0
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "sleep_state": "discard_all"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "sleep_state": "weights_offloaded"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:estimated_flops_per_gpu_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:estimated_read_bytes_per_gpu_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:estimated_write_bytes_per_gpu_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:external_prefix_cache_hits_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:external_prefix_cache_queries_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:generation_tokens_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 13016.228460793804,
+            "min": 0.0,
+            "max": 23736.0,
+            "std": 6956.34061389426,
+            "p1": 6.640000000000001,
+            "p5": 1440.0,
+            "p10": 3180.2,
+            "p25": 6825.0,
+            "p50": 13965.0,
+            "p75": 19128.0,
+            "p90": 21852.2,
+            "p95": 22815.8,
+            "p99": 23457.84
+          }
+        }
+      ]
+    },
+    "vllm:inter_token_latency_seconds": {
+      "type": "histogram",
+      "description": "Histogram of inter-token latency in seconds..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 8302,
+            "sum": 1672.660252137998,
+            "avg": 0.2014767829604912,
+            "count_rate": 20.911388426309966,
+            "sum_rate": 4.213159267370181,
+            "p1_estimate": 0.06106603623863764,
+            "p5_estimate": 0.06333197412347209,
+            "p10_estimate": 0.06616439647951516,
+            "p25_estimate": 0.07234595771035761,
+            "p50_estimate": 0.12071050301617238,
+            "p75_estimate": 0.3385316543667001,
+            "p90_estimate": 0.37510226786213613,
+            "p95_estimate": 0.38764201274308385,
+            "p99_estimate": 0.3976738086478421
+          },
+          "buckets": {
+            "0.01": 0,
+            "0.025": 0,
+            "0.05": 0,
+            "0.075": 3028,
+            "0.1": 3996,
+            "0.15": 4328,
+            "0.2": 4397,
+            "0.3": 4768,
+            "0.4": 8282,
+            "0.5": 8297,
+            "0.75": 8302,
+            "1.0": 8302,
+            "2.5": 8302,
+            "5.0": 8302,
+            "7.5": 8302,
+            "10.0": 8302,
+            "20.0": 8302,
+            "40.0": 8302,
+            "80.0": 8302,
+            "+Inf": 8302
+          }
+        }
+      ]
+    },
+    "vllm:iteration_tokens_total": {
+      "type": "histogram",
+      "description": "Histogram of computed prompt and generated tokens per nonempty engine output batch..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 1534,
+            "sum": 1477733.0,
+            "avg": 963.3200782268578,
+            "count_rate": 3.863896632854672,
+            "sum_rate": 3722.1692066220558,
+            "p1_estimate": 2.273084409761842,
+            "p5_estimate": 5.778787876486108,
+            "p10_estimate": 7.625618497109826,
+            "p25_estimate": 10.750384174311927,
+            "p50_estimate": 15.3151376146789,
+            "p75_estimate": 23.74554116178098,
+            "p90_estimate": 36.248482861399836,
+            "p95_estimate": 9378.535959595949,
+            "p99_estimate": 15884.47624242425
+          },
+          "buckets": {
+            "1.0": 0,
+            "8.0": 173,
+            "16.0": 827,
+            "32.0": 1365,
+            "64.0": 1383,
+            "128.0": 1383,
+            "256.0": 1383,
+            "512.0": 1383,
+            "1024.0": 1384,
+            "2048.0": 1388,
+            "4096.0": 1408,
+            "8192.0": 1446,
+            "16384.0": 1523,
+            "+Inf": 1534
+          }
+        }
+      ]
+    },
+    "vllm:kv_block_idle_before_evict_seconds": {
+      "type": "histogram",
+      "description": "Histogram of idle time before KV cache block eviction. Sampled metrics (controlled by --kv-cache-metrics-sample)..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.005": 0,
+            "0.01": 0,
+            "0.02": 0,
+            "0.05": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "30.0": 0,
+            "60.0": 0,
+            "120.0": 0,
+            "300.0": 0,
+            "600.0": 0,
+            "1200.0": 0,
+            "1800.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:kv_block_lifetime_seconds": {
+      "type": "histogram",
+      "description": "Histogram of KV cache block lifetime from allocation to eviction. Sampled metrics (controlled by --kv-cache-metrics-sample)..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.005": 0,
+            "0.01": 0,
+            "0.02": 0,
+            "0.05": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "30.0": 0,
+            "60.0": 0,
+            "120.0": 0,
+            "300.0": 0,
+            "600.0": 0,
+            "1200.0": 0,
+            "1800.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:kv_block_reuse_gap_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time gaps between consecutive KV cache block accesses. Only the most recent accesses are recorded (ring buffer). Sampled metrics (controlled by --kv-cache-metrics-sample)..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.005": 0,
+            "0.01": 0,
+            "0.02": 0,
+            "0.05": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "30.0": 0,
+            "60.0": 0,
+            "120.0": 0,
+            "300.0": 0,
+            "600.0": 0,
+            "1200.0": 0,
+            "1800.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:kv_cache_usage_perc": {
+      "type": "gauge",
+      "description": "KV-cache usage. 1 means 100 percent usage.",
+      "unit": "ratio",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.8304150687965518,
+            "min": 0.0,
+            "max": 0.9984575835475579,
+            "std": 0.1289489535258925,
+            "p1": 0.2687300771208226,
+            "p5": 0.6160411311053985,
+            "p10": 0.7002570694087404,
+            "p25": 0.7730077120822623,
+            "p50": 0.8663239074550129,
+            "p75": 0.9102827763496144,
+            "p90": 0.947814910025707,
+            "p95": 0.9701799485861182,
+            "p99": 0.9886169665809768
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_bytes_transferred": {
+      "type": "histogram",
+      "description": "Histogram of bytes transferred per Mooncake KV Cache transfer..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "2048.0": 0,
+            "8192.0": 0,
+            "32768.0": 0,
+            "131072.0": 0,
+            "524288.0": 0,
+            "2097152.0": 0,
+            "8388608.0": 0,
+            "33554432.0": 0,
+            "134217728.0": 0,
+            "536870912.0": 0,
+            "2147483648.0": 0,
+            "8589934592.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_num_descriptors": {
+      "type": "histogram",
+      "description": "Histogram of number of descriptors per Mooncake KV Cache transfer..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "10.0": 0,
+            "20.0": 0,
+            "30.0": 0,
+            "50.0": 0,
+            "75.0": 0,
+            "100.0": 0,
+            "200.0": 0,
+            "400.0": 0,
+            "1000.0": 0,
+            "2000.0": 0,
+            "4000.0": 0,
+            "10000.0": 0,
+            "20000.0": 0,
+            "50000.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_num_failed_recvs_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_num_failed_transfers_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_num_kv_expired_reqs_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:mooncake_xfer_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of transfer duration for Mooncake KV Cache transfers..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.005": 0,
+            "0.01": 0,
+            "0.025": 0,
+            "0.05": 0,
+            "0.075": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.3": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 0,
+            "5.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_bytes_transferred": {
+      "type": "histogram",
+      "description": "Histogram of bytes transferred per NIXL KV Cache transfers..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "2048.0": 0,
+            "8192.0": 0,
+            "32768.0": 0,
+            "131072.0": 0,
+            "524288.0": 0,
+            "2097152.0": 0,
+            "8388608.0": 0,
+            "33554432.0": 0,
+            "134217728.0": 0,
+            "536870912.0": 0,
+            "2147483648.0": 0,
+            "8589934592.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_num_descriptors": {
+      "type": "histogram",
+      "description": "Histogram of number of descriptors per NIXL KV Cache transfers..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "10.0": 0,
+            "20.0": 0,
+            "30.0": 0,
+            "50.0": 0,
+            "75.0": 0,
+            "100.0": 0,
+            "200.0": 0,
+            "400.0": 0,
+            "1000.0": 0,
+            "2000.0": 0,
+            "4000.0": 0,
+            "10000.0": 0,
+            "20000.0": 0,
+            "50000.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_num_failed_notifications_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_num_failed_transfers_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_num_kv_expired_reqs_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_num_notifications_after_expiry_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_post_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of transfer post time for NIXL KV Cache transfers..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.005": 0,
+            "0.01": 0,
+            "0.025": 0,
+            "0.05": 0,
+            "0.075": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.3": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 0,
+            "5.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:nixl_xfer_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of transfer duration for NIXL KV Cache transfers..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.005": 0,
+            "0.01": 0,
+            "0.025": 0,
+            "0.05": 0,
+            "0.075": 0,
+            "0.1": 0,
+            "0.2": 0,
+            "0.3": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 0,
+            "5.0": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "vllm:num_preemptions_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 2.298160696999032,
+            "min": 0.0,
+            "max": 3.0,
+            "std": 0.9625580146234266,
+            "p1": 0.0,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 3.0,
+            "p75": 3.0,
+            "p90": 3.0,
+            "p95": 3.0,
+            "p99": 3.0
+          }
+        }
+      ]
+    },
+    "vllm:num_requests_kv_fetch_by_stage": {
+      "type": "gauge",
+      "description": "Number of waiting requests by async KV load stage. Stage labels: 'waiting_to_start' = needs an async KV load that has not started; 'in_progress' = load started and not yet reported finished; 'completed_waiting' = load finished, request not running yet..",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "stage": "completed_waiting"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "stage": "in_progress"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "stage": "waiting_to_start"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:num_requests_running": {
+      "type": "gauge",
+      "description": "Number of requests in model execution batches.",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 5.888673765730881,
+            "min": 0.0,
+            "max": 9.0,
+            "std": 1.1310442639416038,
+            "p1": 2.0,
+            "p5": 4.0,
+            "p10": 5.0,
+            "p25": 5.0,
+            "p50": 6.0,
+            "p75": 6.0,
+            "p90": 7.0,
+            "p95": 8.0,
+            "p99": 8.0
+          }
+        }
+      ]
+    },
+    "vllm:num_requests_waiting": {
+      "type": "gauge",
+      "description": "Number of requests waiting to be processed.",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 2.611810261374637,
+            "min": 0.0,
+            "max": 8.0,
+            "std": 1.2149488436335663,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 3.0,
+            "p75": 3.0,
+            "p90": 4.0,
+            "p95": 4.0,
+            "p99": 6.67999999999995
+          }
+        }
+      ]
+    },
+    "vllm:num_requests_waiting_by_reason": {
+      "type": "gauge",
+      "description": "Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting..",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "reason": "capacity"
+          },
+          "stats": {
+            "avg": 2.611810261374637,
+            "min": 0.0,
+            "max": 8.0,
+            "std": 1.2149488436335663,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 3.0,
+            "p75": 3.0,
+            "p90": 4.0,
+            "p95": 4.0,
+            "p99": 6.67999999999995
+          }
+        },
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "reason": "deferred"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:prefix_cache_hits_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 691934.9157792836,
+            "min": 0.0,
+            "max": 1177344.0,
+            "std": 302732.36771007895,
+            "p1": 0.0,
+            "p5": 104832.0,
+            "p10": 266112.0,
+            "p25": 499968.0,
+            "p50": 701568.0,
+            "p75": 935424.0,
+            "p90": 1087027.2000000007,
+            "p95": 1128960.0,
+            "p99": 1169280.0
+          }
+        }
+      ]
+    },
+    "vllm:prefix_cache_queries_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 1409856.857696031,
+            "min": 0.0,
+            "max": 2646864.0,
+            "std": 716120.3567094681,
+            "p1": 17963.0,
+            "p5": 176647.0,
+            "p10": 412008.0,
+            "p25": 877512.0,
+            "p50": 1396240.0,
+            "p75": 1997749.0,
+            "p90": 2400671.000000002,
+            "p95": 2513213.0,
+            "p99": 2623277.0
+          }
+        }
+      ]
+    },
+    "vllm:prompt_tokens_by_source_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "source": "external_kv_transfer"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:prompt_tokens_cached_by_source_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "source": "host"
+          },
+          "stats": {
+            "avg": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0,
+            "p1": 0.0,
+            "p5": 0.0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p50": 0.0,
+            "p75": 0.0,
+            "p90": 0.0,
+            "p95": 0.0,
+            "p99": 0.0
+          }
+        }
+      ]
+    },
+    "vllm:prompt_tokens_cached_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 684409.5566311714,
+            "min": 0.0,
+            "max": 1169280.0,
+            "std": 302208.14644644805,
+            "p1": 0.0,
+            "p5": 93542.40000000001,
+            "p10": 243532.80000000002,
+            "p25": 491904.0,
+            "p50": 693504.0,
+            "p75": 927360.0,
+            "p90": 1072512.0,
+            "p95": 1120896.0,
+            "p99": 1161216.0
+          }
+        }
+      ]
+    },
+    "vllm:prompt_tokens_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 1390322.4927395934,
+            "min": 0.0,
+            "max": 2623277.0,
+            "std": 712791.2008040547,
+            "p1": 8949.0,
+            "p5": 158730.2,
+            "p10": 377471.4,
+            "p25": 861629.0,
+            "p50": 1373655.0,
+            "p75": 1973941.0,
+            "p90": 2353923.0,
+            "p95": 2491901.0,
+            "p99": 2598684.0
+          }
+        }
+      ]
+    },
+    "vllm:request_decode_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time spent in DECODE phase for request..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 1582.1930436480006,
+            "avg": 10.547953624320003,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 3.9852870755395013,
+            "p1_estimate": 1.7190711189376597,
+            "p5_estimate": 2.5674605329097777,
+            "p10_estimate": 3.096578103539981,
+            "p25_estimate": 4.6955040591367165,
+            "p50_estimate": 6.9522228836222055,
+            "p75_estimate": 10.666943744333164,
+            "p90_estimate": 19.240560777343813,
+            "p95_estimate": 41.77176043628098,
+            "p99_estimate": 52.6477530121756
+          },
+          "buckets": {
+            "0.3": 0,
+            "0.5": 0,
+            "0.8": 0,
+            "1.0": 0,
+            "1.5": 0,
+            "2.0": 3,
+            "2.5": 6,
+            "5.0": 41,
+            "10.0": 108,
+            "15.0": 129,
+            "20.0": 135,
+            "30.0": 140,
+            "40.0": 142,
+            "50.0": 147,
+            "60.0": 149,
+            "120.0": 150,
+            "240.0": 150,
+            "480.0": 150,
+            "960.0": 150,
+            "1920.0": 150,
+            "7680.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_generation_tokens": {
+      "type": "histogram",
+      "description": "Number of generation tokens processed..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 22668.0,
+            "avg": 151.12,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 57.09700708836357,
+            "p1_estimate": 50.0,
+            "p5_estimate": 52.425563981031836,
+            "p10_estimate": 56.721748867312094,
+            "p25_estimate": 69.61030352615288,
+            "p50_estimate": 88.67450015124459,
+            "p75_estimate": 138.55124824604025,
+            "p90_estimate": 308.1223394326868,
+            "p95_estimate": 540.1653125432215,
+            "p99_estimate": 721.0968879445376
+          },
+          "buckets": {
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "50.0": 1,
+            "100.0": 95,
+            "200.0": 130,
+            "500.0": 140,
+            "1000.0": 149,
+            "2000.0": 150,
+            "5000.0": 150,
+            "10000.0": 150,
+            "20000.0": 150,
+            "50000.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_inference_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time spent in RUNNING phase for request..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 1955.746224622999,
+            "avg": 13.038308164153328,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 4.926206813584774,
+            "p1_estimate": 3.1870827682622687,
+            "p5_estimate": 4.103009058030384,
+            "p10_estimate": 4.831718105678193,
+            "p25_estimate": 6.536646893122802,
+            "p50_estimate": 9.350991680191843,
+            "p75_estimate": 14.212543592435267,
+            "p90_estimate": 22.18355038901175,
+            "p95_estimate": 43.50565989637995,
+            "p99_estimate": 56.687875282419746
+          },
+          "buckets": {
+            "0.3": 0,
+            "0.5": 0,
+            "0.8": 0,
+            "1.0": 0,
+            "1.5": 0,
+            "2.0": 0,
+            "2.5": 1,
+            "5.0": 17,
+            "10.0": 83,
+            "15.0": 116,
+            "20.0": 133,
+            "30.0": 140,
+            "40.0": 140,
+            "50.0": 145,
+            "60.0": 149,
+            "120.0": 150,
+            "240.0": 150,
+            "480.0": 150,
+            "960.0": 150,
+            "1920.0": 150,
+            "7680.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_max_num_generation_tokens": {
+      "type": "histogram",
+      "description": "Histogram of maximum number of requested generation tokens..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 22668.0,
+            "avg": 151.12,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 57.09700708836357,
+            "p1_estimate": 50.0,
+            "p5_estimate": 52.425563981031836,
+            "p10_estimate": 56.721748867312094,
+            "p25_estimate": 69.61030352615288,
+            "p50_estimate": 88.67450015124459,
+            "p75_estimate": 138.55124824604025,
+            "p90_estimate": 308.1223394326868,
+            "p95_estimate": 540.1653125432215,
+            "p99_estimate": 721.0968879445376
+          },
+          "buckets": {
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "50.0": 1,
+            "100.0": 95,
+            "200.0": 130,
+            "500.0": 140,
+            "1000.0": 149,
+            "2000.0": 150,
+            "5000.0": 150,
+            "10000.0": 150,
+            "20000.0": 150,
+            "50000.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_num_preemptions": {
+      "type": "histogram",
+      "description": "Histogram of the number of times a request was preempted..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 3.0,
+            "avg": 0.02,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 0.007556512319794014,
+            "p1_estimate": 0.0,
+            "p5_estimate": 0.0,
+            "p10_estimate": 0.0,
+            "p25_estimate": 0.0,
+            "p50_estimate": 0.0,
+            "p75_estimate": 0.11989775126490315,
+            "p90_estimate": 0.2345444940092591,
+            "p95_estimate": 0.2727600749240444,
+            "p99_estimate": 0.3033325396558727
+          },
+          "buckets": {
+            "1.0": 150,
+            "2.0": 150,
+            "3.0": 150,
+            "4.0": 150,
+            "5.0": 150,
+            "10.0": 150,
+            "20.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_params_max_tokens": {
+      "type": "histogram",
+      "description": "Histogram of the max_tokens request parameter..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 22668.0,
+            "avg": 151.12,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 57.09700708836357,
+            "p1_estimate": 50.0,
+            "p5_estimate": 52.425563981031836,
+            "p10_estimate": 56.721748867312094,
+            "p25_estimate": 69.61030352615288,
+            "p50_estimate": 88.67450015124459,
+            "p75_estimate": 138.55124824604025,
+            "p90_estimate": 308.1223394326868,
+            "p95_estimate": 540.1653125432215,
+            "p99_estimate": 721.0968879445376
+          },
+          "buckets": {
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "50.0": 1,
+            "100.0": 95,
+            "200.0": 130,
+            "500.0": 140,
+            "1000.0": 149,
+            "2000.0": 150,
+            "5000.0": 150,
+            "10000.0": 150,
+            "20000.0": 150,
+            "50000.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_params_n": {
+      "type": "histogram",
+      "description": "Histogram of the n request parameter..",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 150.0,
+            "avg": 1.0,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 0.37782561598970066,
+            "p1_estimate": 0.41326666666666667,
+            "p5_estimate": 0.453,
+            "p10_estimate": 0.5026666666666667,
+            "p25_estimate": 0.6516666666666667,
+            "p50_estimate": 0.9,
+            "p75_estimate": 1.0,
+            "p90_estimate": 1.0,
+            "p95_estimate": 1.0,
+            "p99_estimate": 1.0
+          },
+          "buckets": {
+            "1.0": 150,
+            "2.0": 150,
+            "5.0": 150,
+            "10.0": 150,
+            "20.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_prefill_kv_computed_tokens": {
+      "type": "histogram",
+      "description": "Histogram of new KV tokens computed during prefill (excluding cached tokens)..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 1388069.0,
+            "avg": 9253.793333333333,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 3496.320166408052,
+            "p1_estimate": 831.1312344564411,
+            "p5_estimate": 1616.7921685853157,
+            "p10_estimate": 2592.9251294105215,
+            "p25_estimate": 4768.211539666931,
+            "p50_estimate": 8995.974019503803,
+            "p75_estimate": 12800.760938584448,
+            "p90_estimate": 16925.56790375858,
+            "p95_estimate": 18366.804909207523,
+            "p99_estimate": 19716.354999209856
+          },
+          "buckets": {
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "50.0": 0,
+            "100.0": 0,
+            "200.0": 0,
+            "500.0": 0,
+            "1000.0": 5,
+            "2000.0": 9,
+            "5000.0": 39,
+            "10000.0": 81,
+            "20000.0": 148,
+            "50000.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_prefill_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time spent in PREFILL phase for request..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 373.5531809749999,
+            "avg": 2.4903545398333327,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 0.9409197380452765,
+            "p1_estimate": 0.45653854886424017,
+            "p5_estimate": 0.695804249021541,
+            "p10_estimate": 1.0,
+            "p25_estimate": 1.523633457935028,
+            "p50_estimate": 2.5,
+            "p75_estimate": 3.294450064166116,
+            "p90_estimate": 4.271946523991113,
+            "p95_estimate": 4.5977786772661124,
+            "p99_estimate": 4.919708164655144
+          },
+          "buckets": {
+            "0.3": 0,
+            "0.5": 3,
+            "0.8": 9,
+            "1.0": 14,
+            "1.5": 33,
+            "2.0": 60,
+            "2.5": 74,
+            "5.0": 148,
+            "10.0": 150,
+            "15.0": 150,
+            "20.0": 150,
+            "30.0": 150,
+            "40.0": 150,
+            "50.0": 150,
+            "60.0": 150,
+            "120.0": 150,
+            "240.0": 150,
+            "480.0": 150,
+            "960.0": 150,
+            "1920.0": 150,
+            "7680.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_prompt_tokens": {
+      "type": "histogram",
+      "description": "Number of prefill tokens processed..",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 2517029.0,
+            "avg": 16780.193333333333,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 6339.986882592935,
+            "p1_estimate": 8627.367025417054,
+            "p5_estimate": 9132.38535666907,
+            "p10_estimate": 10262.223105090394,
+            "p25_estimate": 12443.752981464022,
+            "p50_estimate": 16302.644350511639,
+            "p75_estimate": 20466.691144760924,
+            "p90_estimate": 24455.395720964854,
+            "p95_estimate": 26421.929271945046,
+            "p99_estimate": 27995.156112729208
+          },
+          "buckets": {
+            "1.0": 0,
+            "2.0": 0,
+            "5.0": 0,
+            "10.0": 0,
+            "20.0": 0,
+            "50.0": 0,
+            "100.0": 0,
+            "200.0": 0,
+            "500.0": 0,
+            "1000.0": 0,
+            "2000.0": 0,
+            "5000.0": 0,
+            "10000.0": 10,
+            "20000.0": 106,
+            "50000.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_queue_time_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time spent in WAITING phase for request..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 837.837386322,
+            "avg": 5.58558257548,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 2.11037617724207,
+            "p1_estimate": 0.011877133517065909,
+            "p5_estimate": 0.07574144618977978,
+            "p10_estimate": 0.5731593893203967,
+            "p25_estimate": 2.3188206875442336,
+            "p50_estimate": 5.620031376058597,
+            "p75_estimate": 8.37389484167563,
+            "p90_estimate": 10.285147008173219,
+            "p95_estimate": 11.750913082125662,
+            "p99_estimate": 13.930788293991107
+          },
+          "buckets": {
+            "0.3": 14,
+            "0.5": 15,
+            "0.8": 16,
+            "1.0": 21,
+            "1.5": 24,
+            "2.0": 35,
+            "2.5": 38,
+            "5.0": 64,
+            "10.0": 131,
+            "15.0": 150,
+            "20.0": 150,
+            "30.0": 150,
+            "40.0": 150,
+            "50.0": 150,
+            "60.0": 150,
+            "120.0": 150,
+            "240.0": 150,
+            "480.0": 150,
+            "960.0": 150,
+            "1920.0": 150,
+            "7680.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:request_success_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "finished_reason": "length",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 87.75701839303001,
+            "min": 0.0,
+            "max": 150.0,
+            "std": 40.56366433114275,
+            "p1": 0.0,
+            "p5": 9.600000000000001,
+            "p10": 30.0,
+            "p25": 60.0,
+            "p50": 91.0,
+            "p75": 121.0,
+            "p90": 139.0,
+            "p95": 146.0,
+            "p99": 149.0
+          }
+        }
+      ]
+    },
+    "vllm:request_time_per_output_token_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time_per_output_token_seconds per request..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 150,
+            "sum": 11.148086971904325,
+            "avg": 0.0743205798126955,
+            "count_rate": 0.37782561598970066,
+            "sum_rate": 0.02808021884844339,
+            "p1_estimate": 0.026024654692586625,
+            "p5_estimate": 0.033489011917903114,
+            "p10_estimate": 0.04200502113667417,
+            "p25_estimate": 0.053778651465939416,
+            "p50_estimate": 0.06955235860238612,
+            "p75_estimate": 0.08961495626648146,
+            "p90_estimate": 0.11486284773384145,
+            "p95_estimate": 0.13469660168433492,
+            "p99_estimate": 0.15517787500817168
+          },
+          "buckets": {
+            "0.01": 0,
+            "0.025": 1,
+            "0.05": 27,
+            "0.075": 86,
+            "0.1": 127,
+            "0.15": 147,
+            "0.2": 150,
+            "0.3": 150,
+            "0.4": 150,
+            "0.5": 150,
+            "0.75": 150,
+            "1.0": 150,
+            "2.5": 150,
+            "5.0": 150,
+            "7.5": 150,
+            "10.0": 150,
+            "20.0": 150,
+            "40.0": 150,
+            "80.0": 150,
+            "+Inf": 150
+          }
+        }
+      ]
+    },
+    "vllm:spec_decode_num_accepted_tokens_per_pos_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B",
+            "position": "5"
+          },
+          "stats": {
+            "avg": 346.1337890625,
+            "min": 0.0,
+            "max": 693.0,
+            "std": 211.56102459332612,
+            "p1": 1.0,
+            "p5": 20.30000000000001,
+            "p10": 53.0,
+            "p25": 160.0,
+            "p50": 372.0,
+            "p75": 521.0,
+            "p90": 628.4000000000001,
+            "p95": 675.0,
+            "p99": 688.0
+          }
+        }
+      ]
+    },
+    "vllm:spec_decode_num_accepted_tokens_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 8348.162633107455,
+            "min": 0.0,
+            "max": 15563.0,
+            "std": 4575.508617751882,
+            "p1": 3.3200000000000003,
+            "p5": 865.0,
+            "p10": 1918.4,
+            "p25": 4291.0,
+            "p50": 8898.0,
+            "p75": 12301.0,
+            "p90": 14246.000000000002,
+            "p95": 14990.6,
+            "p99": 15394.439999999999
+          }
+        }
+      ]
+    },
+    "vllm:spec_decode_num_draft_tokens_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 56783.39593417232,
+            "min": 0.0,
+            "max": 99624.0,
+            "std": 29034.50979570021,
+            "p1": 27.840000000000003,
+            "p5": 6984.0,
+            "p10": 15199.2,
+            "p25": 30864.0,
+            "p50": 61524.0,
+            "p75": 83076.0,
+            "p90": 92522.40000000001,
+            "p95": 95462.4,
+            "p99": 98272.8
+          }
+        }
+      ]
+    },
+    "vllm:spec_decode_num_drafts_total": {
+      "type": "unknown",
+      "description": "",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "avg": 4731.949661181026,
+            "min": 0.0,
+            "max": 8302.0,
+            "std": 2419.5424829750173,
+            "p1": 2.3200000000000003,
+            "p5": 582.0,
+            "p10": 1266.6,
+            "p25": 2572.0,
+            "p50": 5127.0,
+            "p75": 6923.0,
+            "p90": 7710.200000000001,
+            "p95": 7955.2,
+            "p99": 8189.4
+          }
+        }
+      ]
+    },
+    "vllm:time_to_first_token_seconds": {
+      "type": "histogram",
+      "description": "Histogram of time to first token in seconds..",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "https://dattucodes--example-vllm-inference-server.us-east.modal.direct/metrics",
+          "labels": {
+            "engine": "0",
+            "model_name": "Qwen/Qwen3.5-4B"
+          },
+          "stats": {
+            "count": 155,
+            "sum": 1294.7258415222168,
+            "avg": 8.353069945304625,
+            "count_rate": 0.3904198031893574,
+            "sum_rate": 3.2612039240727677,
+            "p1_estimate": 0.6608258625665997,
+            "p5_estimate": 1.331615611912095,
+            "p10_estimate": 2.111148888072653,
+            "p25_estimate": 4.312863888605667,
+            "p50_estimate": 8.607846173731353,
+            "p75_estimate": 11.578685903186027,
+            "p90_estimate": 14.997276067347713,
+            "p95_estimate": 16.358146112112397,
+            "p99_estimate": 17.446842147924148
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.005": 0,
+            "0.01": 0,
+            "0.02": 0,
+            "0.04": 0,
+            "0.06": 0,
+            "0.08": 0,
+            "0.1": 0,
+            "0.25": 0,
+            "0.5": 0,
+            "0.75": 3,
+            "1.0": 5,
+            "2.5": 21,
+            "5.0": 45,
+            "7.5": 63,
+            "10.0": 91,
+            "20.0": 155,
+            "40.0": 155,
+            "80.0": 155,
+            "160.0": 155,
+            "640.0": 155,
+            "2560.0": 155,
+            "+Inf": 155
+          }
+        }
+      ]
+    }
+  },
+  "input_config": {
+    "models": {
+      "items": [
+        {
+          "name": "Qwen/Qwen3.5-4B"
+        }
+      ]
+    },
+    "endpoint": {
+      "urls": [
+        "https://dattucodes--example-vllm-inference-server.us-east.modal.direct"
+      ],
+      "type": "chat",
+      "timeout": 3600.0,
+      "streaming": true,
+      "extra": {
+        "ignore_eos": true
+      }
+    },
+    "datasets": [
+      {
+        "name": "main",
+        "type": "file",
+        "path": "dataset/lmcache_traces.jsonl",
+        "format": "mooncake_trace",
+        "entries": 20,
+        "random_seed": 42
+      }
+    ],
+    "phases": [
+      {
+        "name": "profiling",
+        "type": "concurrency",
+        "sessions": 20,
+        "concurrency": 10
+      }
+    ],
+    "artifacts": {
+      "dir": "/home/dattatreya/Desktop/learn-harness/inference/results/v3/agentic_conv_20_c_10",
+      "records": [
+        "jsonl"
+      ],
+      "raw": false,
+      "auto_plot": false,
+      "plot_required": false
+    },
+    "tokenizer": {},
+    "gpu_telemetry": {
+      "enabled": true
+    },
+    "server_metrics": {
+      "enabled": true,
+      "urls": [],
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    "network_latency": {
+      "enabled": false
+    },
+    "otel": {},
+    "mlflow": {},
+    "wandb": {}
+  }
+}
